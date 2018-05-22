@@ -19,6 +19,9 @@ public abstract class Product implements Seller{
 	public String getName() {
 		return name;
 	}
+	public String toString() {
+		return "Név: "+" ár: "+price+" .Adókulcs: "+taxKey;
+	}
 	
 	public void riseNetoToBruto() {
 		this.price=brutoPrice();
@@ -31,9 +34,11 @@ public abstract class Product implements Seller{
 	public int getBasePrice() {
 		return price;
 	}
+	@Override
 	public void setBaseValute(String baseValute) {
 		this.baseValute=baseValute;
 	}
+	@Override
 	public String getBaseValute() {
 		return baseValute;
 	}

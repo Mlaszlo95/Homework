@@ -16,7 +16,7 @@ public class Book extends Product{
 		return author;
 	}
 
-	@Override
+	
 	public double priceEach() {
 		return brutoPrice()/pageNumber;
 	}
